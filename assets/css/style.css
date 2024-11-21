@@ -1,0 +1,94 @@
+@import url(./../fonts/Inter-VariableFont_slnt\,wght.ttf);
+
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: var(--Grey-900);
+}
+
+.main-container {
+    width: 280px;
+    background-color: var(--Grey-800);
+    color: var(--White);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+.main-container .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.main-container .profile .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-container .profile img {
+    width: 80px;
+    border-radius: 50%;
+}
+
+.main-container .profile .info h1 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.main-container .profile .info p {
+    color: var(--Green);
+    font-weight: 600;
+}
+
+.main-container .links ul li {
+    width: 280px;
+    background-color: var(--Grey-700);
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.main-container .links ul li a {
+    display: block;
+    width: 100%;
+    padding: 10px 0px;
+    color: var(--White);
+    font-weight: 600;
+    transition: .25s;
+}
+
+.main-container .links ul li a:hover,
+.main-container .links ul li a:focus {
+    background-color: var(--Green);
+    color: var(--Grey-900);
+}
